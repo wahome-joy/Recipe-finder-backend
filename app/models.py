@@ -9,6 +9,7 @@ class Food(db.Model):
     category = db.Column(db.String(50), nullable=False)
     ingredients = db.Column(ARRAY(db.String), nullable=False)
     instructions = db.Column(JSONB, nullable=False)
+    image_url = db.Column(db.String(255), nullable=True)
 
 
 class User(db.Model):
